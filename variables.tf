@@ -2,9 +2,9 @@
 ################################################################################
 ################################################################################
 ###                                                                          ###
-### Name: terraform-vsphere-vcsa                                             ###
-### Description: [Terraform] Module to create and deploy VMware VCSA         ###
-### Last Modified: fparry(2020-09-04T11:12:56-04:00)                         ###
+### Name: terraform-vsphere-vcsa-sso-join                                    ###
+### Description: [Terraform] Module to create and deploy VMware VCSA in SSO  ###
+### Last Modified: cloudduo 29/03/2021                                       ###
 ### License: MIT (See LICENSE.txt in the root of this repository for more    ###
 ###   information.)                                                          ###
 ###                                                                          ###
@@ -23,6 +23,18 @@ variable "vcbuild_esxiusername" {
 
 variable "vcbuild_sso_domain_name" {
   description = "SSO domain name"
+}
+
+variable "vcbuild_sso_first_instance" {
+  description = "first instance"
+}
+
+variable "vcbuild_sso_replication_partner_hostname" {
+  description = "replication partner hostname"
+}
+
+variable "vcbuild_sso_port" {
+  description = "sso port"
 }
 
 variable "vcbuild_deployment_network" {

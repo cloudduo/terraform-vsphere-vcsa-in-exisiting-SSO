@@ -35,7 +35,10 @@
         },
         "sso": {
             "password": "${vcssopassword}",
-            "domain_name": "${sso_domain_name}"
+            "domain_name": "${sso_domain_name}",
+            "first_instance": "${sso_firstinstance}",
+            "replication_partner_hostname":"${sso_repparhostname}" ,
+            "sso_port": {sso_port}
         }
     },
     "ceip": {
